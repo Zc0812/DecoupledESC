@@ -10,14 +10,6 @@ from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 
 
 def my_lcs(string, sub):
-    """
-    Calculates longest common subsequence for a pair of tokenized strings
-    :param string : list of str : tokens from a string split using whitespace
-    :param sub : list of str : shorter string, also split using whitespace
-    :returns: length (list of int): length of the longest common subsequence between the two strings
-
-    Note: my_lcs only gives length of the longest common subsequence, not the actual LCS
-    """
     if len(string) < len(sub):
         sub, string = string, sub
 
